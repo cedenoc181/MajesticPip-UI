@@ -10,9 +10,9 @@ function App() {
       <header className="App-header">
           <Nav/>
       </header>
-      <Home id="home"/>
-      <About id="about"/>
-      <Testimonies id="testimonial"/>
+      <Home />
+      <About />
+      <Testimonies />
 
     </div>
   );

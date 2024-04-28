@@ -1,0 +1,40 @@
+.navbar {
+    background-color: #1B1524 !important;
+}
+
+.nav-container {
+  max-height: 100% !important;
+}
+  
+.nav-link, .btn, .navbar-brand{
+    color: white !important;
+    font-size: x-large;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.btn {
+    background-color: transparent;
+  border: 2px solid #6e00ff; 
+  color: #6e00ff; 
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  transition: color 0.3s, border-color 0.3s; 
+} 
+
+.btn:hover {
+    color: #9f7bff; 
+    background-color: #9f7bff; 
+  }
+
+  a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  a:hover {
+    color: inherit; /* Inherit color from parent on hover */
+  }
