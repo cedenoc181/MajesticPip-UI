@@ -1,26 +1,30 @@
 import React from 'react'
+import "./About.css"
+import Image1 from "./images/fx-img-3.jpeg"
 
 function About() {
   return (
     // BS Cards 
-    <div id="about" class="">
-
-        <div>
-            
-        </div>
+    <div id="about" class="container">
 
 {/* trade results */}
+        <div class="row">
+        <div class="col-5">     
         <figure class="figure">
-                <img src="..." class="figure-img img-fluid rounded" alt="..."/>
+                <img src={Image1} class="figure-img img-fluid rounded" alt="test 1"/>
                 <figcaption class="figure-caption"></figcaption>
         </figure>
+        </div>
 
+        {/* <div class="col-8">
+
+        </div> */}
 
         <figure class="figure">
-                <img src="..." class="figure-img img-fluid rounded" alt="..."/>
+                <img src="..." class="figure-img img-fluid rounded" alt="test 2"/>
                 <figcaption class="figure-caption"></figcaption>
         </figure>
-
+        </div>
 {/* BS card for discord link  */}
         <div class="card text-center w-75 m-auto">
                 <div class="card-header">

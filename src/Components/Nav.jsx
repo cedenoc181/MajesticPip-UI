@@ -20,8 +20,9 @@ function Nav() {
       <div class="navbar-nav m-auto">
         <a class="nav-link active" aria-current="page" href="#home">Home</a>
         <a class="nav-link" href="#about">About us</a>
-        <a class="nav-link" href="#newsletter">Newsletter</a>
         <a class="nav-link" href="#testimonial">Testimonial</a>
+        <a class="nav-link" href="#newsletter">Newsletter</a>
+  
       </div>
           <button type="button" class="discord-btn btn">
       <a class="discord-link" href="https://ceddev.netlify.app/">
