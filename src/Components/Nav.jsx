@@ -14,13 +14,14 @@ function Nav() {
       <img src={logo} class="logo" alt="logo" />
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon navbar-dark"></span>
     </button>
     <div class="nav-links collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav m-auto">
         <a class="nav-link active" aria-current="page" href="#home">Home</a>
         <a class="nav-link" href="#about">About us</a>
-        <a class="nav-link" href="#testimonial">Testimonies</a>
+        <a class="nav-link" href="#newsletter">Newsletter</a>
+        <a class="nav-link" href="#testimonial">Testimonial</a>
       </div>
           <button type="button" class="discord-btn btn">
       <a class="discord-link" href="https://ceddev.netlify.app/">

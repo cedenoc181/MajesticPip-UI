@@ -4,7 +4,7 @@ function Newsletter() {
   return (
     /* join news letter */
     /* requires $enable-grid-classes Sass variable to be enabled, per bootstrap docs*/
-    <div class="newsletter"> 
+    <div class="newsletter" id="newsletter"> 
     <div class="mt-3">
         <h3 class="label text-center">
             Join our

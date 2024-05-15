@@ -3,9 +3,13 @@
     max-height: 85px !important;
 }
 
-.nav-link, .btn, .navbar-brand{
+ .btn, .navbar-brand{
     color: white !important;
     font-size: x-large;
+}
+
+.nav-link {
+  font-size: 0;
 }
 
 .logo {
@@ -45,14 +49,18 @@
   }
 
 
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     .navbar-nav {
-      text-align: end;
+      text-align: center;
+    }
+    .nav-link {
+      color: white !important;
+      font-size: x-large;
     }
   
     .navbar-nav .nav-link {
       padding: 15px;
-      background-color: #1B1524;
+      background-color: rgba(87, 70, 112, 0.4);
       border-bottom: 1px solid #555;
     }
   
@@ -64,14 +72,31 @@
       position: absolute;
       top: 85px;
       right: 0;
-      background-color: #1B1524;
+      background-color: rgba(200, 175, 238, 0.4);
       z-index: 1;
+      border: 2px solid rgba(21, 18, 25);
+      border-radius: 10px;
     }
+
+   
   
+    .navbar-toggler:hover {
+      border: 2px solid #9f7bff;
+      background-color: #8f74b3;
+    }
+
+    .navbar-toggler{
+      border: 2px solid #796f94;
+    }
+
+    .navbar-toggler-icon {
+      color: white !important;
+    }
 
     .discord-btn {
       border: none;
       margin-left: auto;
-   
+      width: 100%;
+      padding-right: 38%;
     }
   }
