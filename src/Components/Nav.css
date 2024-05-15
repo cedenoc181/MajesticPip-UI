@@ -1,11 +1,8 @@
 .navbar {
     background-color: #1B1524 !important;
+    max-height: 85px !important;
 }
 
-.nav-container {
-  max-height: 100% !important;
-}
-  
 .nav-link, .btn, .navbar-brand{
     color: white !important;
     font-size: x-large;
@@ -14,6 +11,7 @@
 .logo {
     width: 100px;
     height: 100px;
+    margin-left: 25px;
 }
 
 .btn {
@@ -23,7 +21,7 @@
   padding: 10px 20px 10px 20px;
   cursor: pointer;
   transition: color 0.3s, border-color 0.3s; 
-  margin-right: 25px;
+ 
 } 
 
 .btn:hover {
@@ -38,4 +36,42 @@
   
   a:hover {
     color: inherit; /* Inherit color from parent on hover */
+  }
+
+  .nav-links .discord-btn{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: end;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 15px;
+      background-color: #1B1524;
+      border-bottom: 1px solid #555;
+    }
+  
+    .navbar-nav .nav-link:hover {
+      background-color: #9f7bff;
+    }
+  
+    .navbar-collapse {
+      position: absolute;
+      top: 85px;
+      right: 0;
+      background-color: #1B1524;
+      z-index: 1;
+    }
+  
+
+    .discord-btn {
+      border: none;
+      margin-left: auto;
+   
+    }
   }
