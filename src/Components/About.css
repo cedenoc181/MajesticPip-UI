@@ -24,7 +24,7 @@
 }
 
 .form-check {
-    padding-top: 10px;
+    padding-top: 5%;
 }
 
 .policy {
@@ -38,8 +38,9 @@
     margin-left: 10% !important;
 }
 
-.btn {
-    margin-left: 15% !important;
+.btn-container {
+margin-left: 25% !important;
+padding-top: 5% !important;
 }
 
 .row::after {

@@ -20,12 +20,12 @@ function About() {
 </div>
   </div>
 
-  <form>
-  <div class="form-group ">
+  <form class="form col-8">
+  <div class="form-group">
     <label for="exampleInputName">Name</label>
     <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter your name" />
   </div>
-  <div class="form-group ">
+  <div class="form-group">
     <label for="exampleInputPassword1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" />
     <small id="emailHelp" class="form-text text-muted">*We'll never share your email with anyone else.</small>
@@ -34,7 +34,9 @@ function About() {
     <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
     <label class="form-check-label" for="exampleCheck1">I agree to the website <span class="policy"><a class="policy-link" href="#">privacy policy</a></span></label>
   </div>
-  <button type="submit" class="btn btn-primary">Join!</button>
+  <div class="btn-container">
+  <button type="submit" class="btn  btn-primary">Join!</button>
+  </div>
 </form>
 {/* BS card for discord link  */}
         {/* <div class="card text-center w-75 m-auto">
