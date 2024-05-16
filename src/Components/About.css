@@ -1,8 +1,47 @@
-
-.figure-img {
-   height: 250px !important;
-   background-color: transparent;
+#about {
+    background-color: rgba(27, 21, 36);
 }
+
+.hero {
+    float: right !important;
+}
+.container p, h1 {
+    color: white !important;
+}
+.figure-img {
+   height: 450px !important;
+}
+
+
+.form-group {
+    width: 450px;
+    color: white !important;
+    padding-top: 15px;
+}
+
+.form-check-label, .form-text{
+    color: white !important;
+}
+
+.form-check {
+    padding-top: 10px;
+}
+
+.policy {
+    color: rgb(167, 102, 227);
+}
+.form-control {
+    border-radius: 20px;
+    border: 2px solid #8259f5;
+}
+.form-group, .form-check {
+    margin-left: 10% !important;
+}
+
+.btn {
+    margin-left: 15% !important;
+}
+
 .row::after {
     content: '';
     clear: both;
@@ -12,9 +51,9 @@
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid darkmagenta;
+
   }
-  
+
   [class*="col-"] {
     width: 100%;
   }

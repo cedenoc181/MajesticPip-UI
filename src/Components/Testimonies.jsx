@@ -1,8 +1,9 @@
 import React from 'react'
+import "./Testimonial.css"
 
 function Testimonies() {
   return (
-    <div id="testimonial">
+    <div id="testimonial" class="testimonial">
 
     </div>
   )

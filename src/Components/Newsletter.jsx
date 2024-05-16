@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Newsletter.css"
 
 function Newsletter() {
   return (
