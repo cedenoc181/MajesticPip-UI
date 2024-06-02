@@ -14,14 +14,17 @@ function Newsletter() {
     </div>
         <div class="row g-3 w-75 m-auto">
             <div class="col">
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name"/>
+            <label class="form-input-label" for="exampleFormFirstName">First Name</label>
+                <input type="text" class="form-control" id="exampleFormFirstName" placeholder="First name" aria-label="First name"/>
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"/>
+            <label class="form-input-label" for="exampleFormLastName">Last Name</label>
+                <input type="text" class="form-control" id="exampleFormLastName" placeholder="Last name" aria-label="Last name"/>
             </div>
             <div >
                 <div class="mb-3 w-75 m-auto">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@email.com"></input>
+                <label class="form-input-label" for="exampleFormControlInput1">Email address</label>
+             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@email.com"></input>
                 </div>
 
                 <div class="d-grid mx-auto w-25">

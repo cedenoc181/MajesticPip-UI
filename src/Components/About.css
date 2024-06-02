@@ -1,5 +1,5 @@
 #about {
-    background-color: rgba(27, 21, 36);
+    background-color: rgb(3, 2, 4);
 }
 
 .hero {
@@ -11,12 +11,25 @@
 .figure-img {
    height: 450px !important;
 }
-
+.form {
+    margin-left: 6%;
+}
+.form-container {
+    width: 70%;
+    background-color: rgb(174, 154, 204, 0.1);
+    border-radius: 20px;
+    padding: 15px;
+    border: 2px solid rgb(168, 79, 240)
+}
 
 .form-group {
-    width: 450px;
     color: white !important;
-    padding-top: 15px;
+    padding: 15px;
+}
+
+.form-input-label {
+    font-size: large;
+    font-weight: 600;
 }
 
 .form-check-label, .form-text{
@@ -24,11 +37,13 @@
 }
 
 .form-check {
-    padding-top: 5%;
+    padding-top: 2% ;
 }
 
 .policy {
     color: rgb(167, 102, 227);
+    font-style:bold; 
+    font-weight: 700;
 }
 .form-control {
     border-radius: 20px;
@@ -37,6 +52,21 @@
 .form-group, .form-check {
     margin-left: 10% !important;
 }
+
+.submit-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #8259f5;
+    padding: 10px 20px 10px 20px;
+    transition: color 0.3s, border-color 0.3s; 
+    cursor: pointer;
+    border-radius: 20px;
+    width: 20%;
+}
+
+.submit-btn:hover {
+    background-color: #9f7bff; 
+  }
 
 .btn-container {
 margin-left: 25% !important;

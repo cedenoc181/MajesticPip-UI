@@ -1,5 +1,6 @@
 import React from 'react'
 import "./About.css"
+import Privacy from './Privacy'
 import Image1 from "./images/trading-signal.png"
 
 function About() {
@@ -20,22 +21,24 @@ function About() {
 </div>
   </div>
 
-  <form class="form col-8">
+  <form  class="form col-8"  >
+        <div class="form-container">
   <div class="form-group">
-    <label for="exampleInputName">Name</label>
+    <label class="form-input-label" for="exampleInputName">Name</label>
     <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter your name" />
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Email address</label>
+    <label class="form-input-label" for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" />
     <small id="emailHelp" class="form-text text-muted">*We'll never share your email with anyone else.</small>
   </div>
   <div class="form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-    <label class="form-check-label" for="exampleCheck1">I agree to the website <span class="policy"><a class="policy-link" href="#">privacy policy</a></span></label>
+    <label class="form-check-label" for="exampleCheck1">I agree to the website <span class="policy"><a class="policy-link" href="#privacy">privacy policy</a></span></label>
   </div>
   <div class="btn-container">
-  <button type="submit" class="btn  btn-primary">Join!</button>
+  <button type="submit" class="submit-btn">Join!</button>
+  </div>
   </div>
 </form>
 {/* BS card for discord link  */}
