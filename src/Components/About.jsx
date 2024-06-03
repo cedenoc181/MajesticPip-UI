@@ -1,9 +1,12 @@
 import React from 'react'
 import "./About.css"
-import Privacy from './Privacy'
 import Image1 from "./images/trading-signal.png"
+import { useNavigate } from "react-router-dom";
 
 function About() {
+
+        const navigate = useNavigate();
+
   return (
     // BS Cards 
     <div id="about" class="container-fluid">
@@ -33,8 +36,10 @@ function About() {
     <small id="emailHelp" class="form-text text-muted">*We'll never share your email with anyone else.</small>
   </div>
   <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-    <label class="form-check-label" for="exampleCheck1">I agree to the website <span class="policy"><a class="policy-link" href="#privacy">privacy policy</a></span></label>
+    <label class="form-check-label" for="exampleCheck1">I agree to the website <span class="policy"><p style={{display: 'inline-block'}} onClick={()=> {
+        navigate("/privacy");
+      }}>privacy policy</p></span></label>
+       <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
   </div>
   <div class="btn-container">
   <button type="submit" class="submit-btn">Join!</button>
