@@ -17,7 +17,7 @@ function App() {
       </header>
       {location.pathname !== "/privacy" && (
         <>
-      <Home />
+      <Home path="/home"/>
       <About />
       <Testimonies />
       <Newsletter />

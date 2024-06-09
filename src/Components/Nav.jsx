@@ -2,16 +2,21 @@ import React from 'react';
 import "./Nav.css";
 import logo from "./images/MajesticPips-logo-2.png"
 import "bootstrap/js/src/collapse.js";
-
+import { useNavigate } from "react-router-dom";
 
 function Nav() {
+
+  const navigate = useNavigate();
+
+
   return (
     // BS navbar
     <div class="nav-container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid ">
     <div class="navbar-brand" >
-      <img src={logo} class="logo" alt="logo" />
+      <img src={logo} class="logo" alt="logo" onClick={()=> {
+        navigate("/home")}} />
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon navbar-dark"></span>
