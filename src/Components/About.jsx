@@ -31,41 +31,22 @@ function About() {
 
         const sendEmail = (e) => {
                 e.preventDefault();
-            
                 console.log("submit clicked")
-
                  // Ensure you have a reference to your form
         const formElement = form.current;
 
         // Extract the user's email address from the form
         const userEmail = formElement.querySelector('input[name="email"]').value;
-
-        // const userName = formElement.querySelector('input[name="name"]').value
-
+        console.log("userEmail: " + userEmail)
         if (!userEmail) {
             console.error("User email is required for auto-reply");
             return;
         }
 
-        let autoReplyParams = {
-                email: userEmail,
-            };
-
-
     // Send the main email
-    emailjs.sendForm('service_jpfojjx', 'template_irl4h16', formElement, emailjs.options)
+    emailjs.sendForm('service_jpfojjx', 'template_irl4h16', formElement)
         .then((result) => {
             console.log(result.text, "email sent to admin");
-
-            // Send auto-reply email
-            emailjs.send('service_jpfojjx', 'template_8hgnfc6', autoReplyParams, emailjs.options)
-                .then((result) => {
-                    console.log(result.text, "auto-reply sent to user");
-                }, (error) => {
-                    console.log(error.text, "auto-reply failed");
-                });
-        }, (error) => {
-            console.log(error.text, "main email failed");
         });
 };
 
