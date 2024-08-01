@@ -2,3 +2,7 @@
     background-color: rgba(27, 21, 36);
 }
 
+.long_gold {
+   max-width: 300px;
+   max-height: 300px;
+}
