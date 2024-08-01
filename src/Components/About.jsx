@@ -60,9 +60,9 @@ function About() {
                 <img src={Image1} class="figure-img img-fluid rounded" alt="test 1"/>
                 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">Join Our Free Trading Community</h1>
+    <h1 class="display-4">Join Our Free <span class="display-4-span">Trading Community</span></h1>
     <p class="lead">Unlock the Power of Trading Signals with a group of like minded individuals. </p>
-     <p>Ready to start your path to profits? Join our <span class="discord-server-character">Discord server</span> now!</p>
+     <p class="cta">Ready to start your path to profits? Join our <span class="discord-server-character">Discord Server Today!</span> </p>  {/*edit this span class */}
   </div>
 </div>
   </div>

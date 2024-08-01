@@ -7,7 +7,7 @@ function Home() {
   return (
     // Spline animation import 
     <div id="home">
-    <Spline scene="https://prod.spline.design/ryOlATxiG1F0IpSI/scene.splinecode" />
+ <Spline scene="https://prod.spline.design/ryOlATxiG1F0IpSI/scene.splinecode" />
    </div>
   )
 }

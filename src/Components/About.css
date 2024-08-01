@@ -15,7 +15,7 @@
     margin-left: 6%;
 }
 .form-container {
-    width: 70%;
+    width: 65%;
     background-color: rgb(174, 154, 204, 0.1);
     border-radius: 20px;
     padding: 15px;
@@ -73,6 +73,27 @@ margin-left: 25% !important;
 padding-top: 5% !important;
 }
 
+.display-4 {
+font-weight: 600;
+}
+
+.display-4-span {
+font-weight: 800;
+color: #da91f4 !important;
+}
+
+.lead {
+    font-size:x-large;
+}
+
+.discord-server-character {
+    color: #da91f4 !important;
+    font-size: xx-large;
+}
+
+.cta {
+    font-size: x-large;
+}
 .row::after {
     content: '';
     clear: both;
