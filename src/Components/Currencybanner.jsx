@@ -1,15 +1,15 @@
 import React from 'react'
 
-function currencybanner({  }) {
+function currencybanner({ currency }) {
 
 
-console.log();
+console.log(currency);
 
-
+console.log("success")
   return (
-    <div>
-        <h3>{}</h3>
-         <p> {}</p>
+    <div id="currencybanner" class="container">
+        <h3 id="currency" class="currency ticker">{currency.code}</h3>
+         <p class="currency full name"> {currency.name}</p>
     </div>
   )
 }

@@ -7,11 +7,8 @@ function Testimonies() {
     <div id="testimonial" class="testimonial">
 
     <div class="trade-images">
-      <img class="long_gold" src={long_gold}/>
+      <img class="long_gold" src={long_gold} alt={"long gold chart"}/>
     </div>
-
-
-
 
     </div>
   )

@@ -62,7 +62,7 @@ function About() {
   <div class="container">
     <h1 class="display-4">Join Our Free Trading Community</h1>
     <p class="lead">Unlock the Power of Trading Signals with a group of like minded individuals. </p>
-     <p>Ready to start your path to profits? Join our Discord server now!</p>
+     <p>Ready to start your path to profits? Join our <span class="discord-server-character">Discord server</span> now!</p>
   </div>
 </div>
   </div>
