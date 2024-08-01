@@ -31,6 +31,7 @@ function App() {
         const result = await response.json();
         setCurrencies(result.data.currencies); // results contains currencies but must be accessed through .currencies
         console.log(currencies);
+        currencyLoop(result.data.currencies);
         console.log("API currencies fetch response")
       } catch (error) {
         console.error(error);
@@ -40,25 +41,24 @@ function App() {
     fetchData();
   }, []);
 
+const desiredCurrencyCodes = new Set(["AUD", "USD", "EUR", "GBP", "JPY", "CAD", "CHF", "NZD", "CNY", "HKD"]);
 let container = [];
 
 
-  const currencyLoop = (data) => {
+  const currencyLoop = (currencies) => {
     console.log("currency loop function execution");
     for (let i = 0; i < currencies.length; i++) {
       // console.log(currencies[i].code); // currency code iteration displayed check
-      if (currencies[i].code === "AUD") { 
-        container += currencies[i];
-      }
-      else if (currencies[i].code === "USD") {
-        container += currencies[i];
+      if (desiredCurrencyCodes.has(currencies[i].code)) { 
+       container.push(currencies[i])
       }
     }
     console.log(container);
     console.log("last currency update")
   };
 
-  currencyLoop(currencies);
+  
+ 
   
   const location = useLocation();
   return (
