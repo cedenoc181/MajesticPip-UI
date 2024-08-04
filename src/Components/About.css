@@ -61,7 +61,6 @@
     transition: color 0.3s, border-color 0.3s; 
     cursor: pointer;
     border-radius: 20px;
-    width: 20%;
 }
 
 .submit-btn:hover {

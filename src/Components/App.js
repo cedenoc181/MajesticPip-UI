@@ -8,7 +8,7 @@ import About from './About';
 import Testimonies from './Testimonies';
 import Newsletter from './Newsletter';
 import Footer from './Footer';
-import Privacy from './Privacy'
+import Privacy from './Privacy';
 
 function App() {
   //currencies to store API
@@ -74,11 +74,11 @@ let container = []; //to store unique currencies
       <About />
       <Testimonies />
       <Newsletter />
+      </>
+      )}
       <Routes>
         <Route  path="/privacy" element={<Privacy />} />
       </Routes>
-      </>
-      )}
       <Footer />
     </div>
   );
