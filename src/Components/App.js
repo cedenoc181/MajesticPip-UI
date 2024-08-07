@@ -40,9 +40,31 @@ function App() {
   //   fetchData();
   // }, []);
 
+
+   useEffect(() => {
+    const fetchData = async () => {
+      const url = 'http://localhost:3001/scrape-data';
+      const options = {
+        method: 'GET'
+      };
+
+      try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        setCurrencies(result); // passing fetch data onto the state "currencies" property
+        currencyLoop(result);
+        console.log("API currencies fetch response")
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   console.log(currencies)
 
-const desiredCurrencyCodes = new Set(["AUD", "USD", "EUR", "GBP", "JPY", "CAD", "CHF", "NZD", "CNY", "HKD"]); //currency codes that i want to abstract
+const desiredCurrencyCodes = new Set(["AUD", "USD", "EUR", "GBP", "JPY", "CAD", "CHF", "CNY"]); //currency codes that i want to abstract
 let container = []; //to store unique currencies
 
 
