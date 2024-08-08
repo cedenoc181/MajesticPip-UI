@@ -48,11 +48,9 @@ function App() {
       <Home path="/home"/>
          {/* Render your currencies data here */}
          {currencies && currencies.length > 0 ? (
-            currencies.map(currency => (
-              <Currencybanner key={currency.id} currency={currency} />
-            ))
+              <Currencybanner currency={currencies} />
           ) : (
-            <p>Loading currencies...</p>
+            <p class="loadingQue">Loading currencies...</p> //add icon for loading ?
           )}
       <About />
       <Testimonies />

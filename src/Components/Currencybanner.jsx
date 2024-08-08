@@ -1,4 +1,6 @@
 import React from 'react'
+import "./Currencybanner.css"
+import Currencybannercards from "./Currencybannercards"
 
 function currencybanner({ currency }) {
 
@@ -7,9 +9,11 @@ console.log(currency);
 
 console.log("success")
   return (
-    <div id="currencybanner" class="container">
-        <h3 id="currency" class="currencyticker">{currency.abbriviation}</h3>
-         <p class="currencyfullname"> {currency.name}</p>
+    <div id="currencybanner">
+          {currency.map((currencies, index) => (
+            <Currencybannercards key={index} currencies={currencies}/>
+)
+          )}
     </div>
   )
 }

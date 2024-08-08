@@ -1,0 +1,22 @@
+
+#currencybanner  {
+    background-color: rgb(3, 2, 4);
+    height: 100%;
+    margin: 0;
+}
+
+.currencyticker {
+    font-size: 22px;
+    Font-weight: 700;
+    color: white;
+}
+
+.currencyfullname {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.cname {
+    background-color: rgb(150, 106, 192);
+}
