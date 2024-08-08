@@ -13,33 +13,6 @@ import Privacy from './Privacy';
 function App() {
   //currencies to store API
   const [currencies, setCurrencies] = useState([]);
-  //muted until the next time I work on it to save the fetch request hard limit.******************************************
-  // fetching currency names 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const url = 'https://crypto-market-prices.p.rapidapi.com/currencies';
-  //     const options = {
-  //       method: 'GET',
-  //       headers: {
-  //         'x-rapidapi-key': 'db2699a3dfmshf2b69166bf418f3p1c5d9cjsn44a1af8bd268',
-  //         'x-rapidapi-host': 'crypto-market-prices.p.rapidapi.com'
-  //       }
-  //     };
-
-  //     try {
-  //       const response = await fetch(url, options);
-  //       const result = await response.json();
-  //       setCurrencies(result.data.currencies); // passing fetch data onto the state "currencies" property
-  //       currencyLoop(result.data.currencies);
-  //       console.log("API currencies fetch response")
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, []);
-
 
    useEffect(() => {
     const fetchData = async () => {
@@ -51,8 +24,8 @@ function App() {
       try {
         const response = await fetch(url, options);
         const result = await response.json();
-        setCurrencies(result); // passing fetch data onto the state "currencies" property
-        currencyLoop(result);
+        // console.log(result); // passing fetch data onto the state "currencies" property
+        setCurrencies(result); //settinng state to the API object
         console.log("API currencies fetch response")
       } catch (error) {
         console.error(error);
@@ -62,23 +35,7 @@ function App() {
     fetchData();
   }, []);
 
-  console.log(currencies)
 
-const desiredCurrencyCodes = new Set(["AUD", "USD", "EUR", "GBP", "JPY", "CAD", "CHF", "CNY"]); //currency codes that i want to abstract
-let container = []; //to store unique currencies
-
-
-  const currencyLoop = (currencies) => {
-    console.log("currency loop function execution");
-    for (let i = 0; i < currencies.length; i++) {
-      // console.log(currencies[i].code); //(keep suedo bc too many lines on console)
-      if (desiredCurrencyCodes.has(currencies[i].code)) { 
-       container.push(currencies[i])
-      }
-    }
-    console.log(container);
-    console.log("last currency update")
-  };
   
   const location = useLocation();
   return (
@@ -89,10 +46,14 @@ let container = []; //to store unique currencies
       {location.pathname !== "/privacy" && (
         <>
       <Home path="/home"/>
-      {/* Render your currencies data here */}
-      {container.map(currency => (
-      <Currencybanner key={currency.id} currency={currency}/>))}
-        {/* <Currencybanner /> */}
+         {/* Render your currencies data here */}
+         {currencies && currencies.length > 0 ? (
+            currencies.map(currency => (
+              <Currencybanner key={currency.id} currency={currency} />
+            ))
+          ) : (
+            <p>Loading currencies...</p>
+          )}
       <About />
       <Testimonies />
       <Newsletter />
@@ -104,6 +65,6 @@ let container = []; //to store unique currencies
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
