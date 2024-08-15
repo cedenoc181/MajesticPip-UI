@@ -2,21 +2,43 @@
 #currencybanner  {
     background-color: rgb(3, 2, 4);
     height: 100%;
-    display: flex;
-    justify-items:flex-start;
-    overflow: scroll;
 }
 
-/* .container {
-    overflow: auto;
-    } */
+.currencybanner {
+    display: flex;
+    justify-items:flex-start;
+    overflow: scroll; 
+    border-top: solid 1.5px #ffffff;
+    border-bottom: solid 1.5px #ffffff;
 
+}
+
+.container {
+    margin: 5px;
+}
+
+.usd {
+    color: white;
+}
+
+.bannerTitle {
+    color: rgb(195, 153, 244);
+    font-family: 'Merriweather';
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+
+    .bannerTitle .usd {
+        margin-right: 5px; 
+      }
 
 .cname {
-    font-size: 21px;
+    font-size: 18px; /*consider using media query to make font size appropriate for smaller screen sizes  */
     font-weight: 600;
     color: rgb(171, 97, 240);
-    text-decoration: underline;
+ 
+    
 }
 
 .currencyticker {

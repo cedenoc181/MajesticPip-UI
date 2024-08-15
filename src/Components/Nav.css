@@ -72,7 +72,7 @@
       position: absolute;
       top: 85px;
       right: 0;
-      background-color: rgba(200, 175, 238, 0.4);
+      background-color: rgb(200, 175, 238);
       z-index: 1;
       border: 2px solid rgba(21, 18, 25);
       border-radius: 10px;
