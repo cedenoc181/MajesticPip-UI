@@ -12,18 +12,19 @@
    height: 450px !important;
 }
 .form {
-    margin-left: 6%;
+    margin-left: 22%;
 }
+
 .form-container {
-    width: 65%;
+    width: 75%;
     background-color: rgb(174, 154, 204, 0.1);
     border-radius: 20px;
     padding: 15px;
-    border: 2px solid rgb(168, 79, 240)
+    border: 2px solid rgb(203, 163, 244)
 }
 
 .form-group {
-    color: white !important;
+    color: rgb(167, 102, 227) !important;
     padding: 15px;
 }
 
@@ -47,6 +48,7 @@
 }
 .form-control {
     border-radius: 20px;
+    width: 75%;
     border: 2px solid #8259f5;
 }
 .form-group, .form-check {
