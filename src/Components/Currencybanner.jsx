@@ -12,8 +12,7 @@ console.log("success")
     <div id="currencybanner">
           {currency.map((currencies, index) => (
             <Currencybannercards key={index} currencies={currencies}/>
-)
-          )}
+          ))}
     </div>
   )
 }

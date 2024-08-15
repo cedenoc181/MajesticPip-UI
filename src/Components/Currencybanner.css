@@ -2,21 +2,32 @@
 #currencybanner  {
     background-color: rgb(3, 2, 4);
     height: 100%;
-    margin: 0;
+}
+
+/* .container {
+    overflow: auto;
+    } */
+
+
+.cname {
+    font-size: 21px;
+    font-weight: 600;
+    color: rgb(171, 97, 240);
+    text-decoration: underline;
 }
 
 .currencyticker {
     font-size: 22px;
     Font-weight: 700;
-    color: white;
+    color: rgb(236, 211, 250);
 }
 
-.currencyfullname {
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
+.currencyConversion {
+    color: rgb(242, 242, 228);
+    padding-left: 15px;
 }
 
-.cname {
-    background-color: rgb(150, 106, 192);
+.ticker-cards {
+    display: flex;
 }
+
