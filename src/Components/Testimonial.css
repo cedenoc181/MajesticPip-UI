@@ -1,8 +1,21 @@
-.testimonial {
-    background-color: rgba(27, 21, 36);
+.testimonial .bodyTest{
+    background-color: rgb(1, 0, 2);
 }
 
 .long_gold {
    max-width: 300px;
    max-height: 300px;
+   margin-left: 12%;
+   margin-top: 3%;
+}
+
+.testTitle {
+    color: white;
+    font-size: 50px;
+    padding-top: 5%;
+    margin-left: 10%;
+}
+
+.whyPurple {
+    color: rgb(182, 144, 225);
 }
