@@ -11,15 +11,26 @@
     text-decoration:overline rgb(164, 35, 228);
 }
 
-/* .imageCon {
-    
-} */
+.imageMap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageCon {
+    flex: 30%;
+    max-width: 33.33%;
+    max-height: 33.33%;
+    margin-top: 10%;
+}
 
 .imageCard {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 150px;
+    max-height: 150px;
 }
 
 .imageDesc {
-
+    color: white;
+    font-size: 16px;
+    width: 80%;
 }

@@ -41,14 +41,14 @@ let imageArr = [
   
     <div className="resources" id="resources"> 
     <h2 className="resource-title">Resources</h2>
-
+<div className="imageMap row">
 {imageArr.map ( img => (
-      <div className="imageCon" >
-      <img className="imageCard row" src={img.pic} alt={img.alt}/>
+      <div className="imageCon column">
+      <img className="imageCard" src={img.pic} alt={img.alt}/>
       <p className="imageDesc">{img.picDesc}</p>
     </div>
 ))}
-
+</div>
 </div>
   )
 }
