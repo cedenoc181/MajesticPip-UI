@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-AOS.init({ duration: 1500 });
+AOS.init();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

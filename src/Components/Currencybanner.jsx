@@ -15,7 +15,7 @@ console.log(currency);
 console.log("success")
   return (
     <div id="currencybanner">
-      <h2 className="bannerTitle" data-aos="zoom-in-up"><span className="usd">1 USD$</span> Conversion</h2>
+      <h2 className="bannerTitle" data-aos="zoom-in-up" data-aos-duration="1000"><span className="usd">1 USD$</span> Conversion</h2>
        <div className="currencybanner">
           {currency.map((currencies, index) => (
             <Currencybannercards key={index} currencies={currencies}/>
@@ -25,4 +25,4 @@ console.log("success")
   )
 }
 
-export default Currencybanner 
+export default React.memo(Currencybanner); 
