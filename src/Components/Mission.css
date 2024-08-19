@@ -2,11 +2,8 @@
     background-color: rgb(1, 0, 2);
 }
 
-.long_gold {
-   max-width: 300px;
-   max-height: 300px;
-   margin-left: 12%;
-   margin-top: 3%;
+.purple {
+    color: rgb(182, 144, 225);
 }
 
 .missionTitle {
@@ -16,6 +13,43 @@
     margin-left: 10%;
 }
 
-.whyPurple {
-    color: rgb(182, 144, 225);
+.missionTitle2 {
+    color: white;
+    font-size: 50px;
+    padding-top: 5%;
+    margin-left: 25%;
+}
+
+.missionTitle3 {
+    color: white;
+    font-size: 50px;
+    padding-top: 5%;
+    margin-left: 40%;
+}
+
+.statement {
+    color: white;
+    font-size: 22px;
+    font-family: sans-serif;
+    max-width: 600px;
+    margin-left: 15%;
+    padding-top: 2%;
+}
+
+.statement2 {
+    color: white;
+    font-size: 22px;
+    font-family: sans-serif;
+    max-width: 600px;
+    margin-left: 30%;
+    padding-top: 2%;
+}
+
+.statement3 {
+    color: white;
+    font-size: 22px;
+    font-family: sans-serif;
+    max-width: 600px;
+    margin-left: 45%;
+    padding-top: 2%;
 }
