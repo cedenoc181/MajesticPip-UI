@@ -18,11 +18,11 @@
 .socialHeader {
     color: white;
     font-size: 24px;
-    margin-left: 2%;
+    margin-left: 4%;
 }
 
 .instagram {
-    margin-left: 5%;
+    margin-left: 7%;
     max-width: 75px;
     max-height: 75px;
 }
@@ -30,5 +30,5 @@
 .discord-icon {
     max-width: 60px;
     max-height: 60px;
-    margin-left: 5.5%;
+    margin-left: 7.5%;
 }
