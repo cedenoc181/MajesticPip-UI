@@ -1,6 +1,6 @@
 import React from 'react'
 import "./About.css"
-import Image1 from "./images/trading-signal.png"
+import Image1 from "./images/signal-icon.png"
 import { useNavigate } from "react-router-dom";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
@@ -67,25 +67,25 @@ function About() {
 </div>
   </div>
 
-  <form  class="form col-8" ref={form} onSubmit={sendEmail} >
+  <form  className="form col-8" ref={form} onSubmit={sendEmail} >
         <div class="form-container">
-  <div class="form-group">
-    <label class="form-input-label" for="exampleInputName">Name</label>
-    <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter your name" name="name"/>
+  <div className="form-group">
+    <label className="form-input-label" for="exampleInputName">Name</label>
+    <input type="name" className="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter your name" name="name"/>
   </div>
-  <div class="form-group">
-    <label class="form-input-label" for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" name="email"/>
-    <small id="emailHelp" class="form-text text-muted">*We'll never share your email with anyone else.</small>
+  <div className="form-group">
+    <label className="form-input-label" for="exampleInputEmail1">Email address</label>
+    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" name="email"/>
+    <small id="emailHelp" className="form-text text-muted">*We'll never share your email with anyone else.</small>
   </div>
-  <div class="form-check">
-    <label class="form-check-label" for="exampleCheck1">I agree to the website <span class="policy"><p style={{display: 'inline-block'}} onClick={()=> {
+  <div className="form-check">
+    <label className="form-check-label" for="exampleCheck1">I agree to the website <span class="policy"><p style={{display: 'inline-block'}} onClick={()=> {
         navigate("/privacy");
       }}>privacy policy</p></span></label>
-       <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+       <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
   </div>
-  <div class="btn-container">
-  <button type="submit" class="submit-btn" value="Send">Join!</button>
+  <div className="btn-container">
+  <button type="submit" className="submit-btn" value="Send">Join!</button>
   </div>
   </div>
 </form>

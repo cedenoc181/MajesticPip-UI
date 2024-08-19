@@ -6,9 +6,9 @@ function Privacy() {
 console.log("Privacy component");
 
   return (
-    <div id="privacy" class="privacy">
-     <div class="container">
-      <body class="script">
+    <div id="privacy" className="privacy">
+     <div className="container">
+      <body className="script">
       <p>MajesticPips Discord server Privacy Policy</p>
       </body>
      </div>

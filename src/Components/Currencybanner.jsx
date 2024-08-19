@@ -10,8 +10,8 @@ console.log(currency);
 console.log("success")
   return (
     <div id="currencybanner">
-      <h2 class="bannerTitle"><span class="usd">1 USD$</span> Conversion</h2>
-       <div class="currencybanner">
+      <h2 className="bannerTitle"><span className="usd">1 USD$</span> Conversion</h2>
+       <div className="currencybanner">
           {currency.map((currencies, index) => (
             <Currencybannercards key={index} currencies={currencies}/>
           ))}
