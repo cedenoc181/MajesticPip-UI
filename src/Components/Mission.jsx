@@ -22,14 +22,12 @@ function Mission() {
    </p>
 
     <h4 className="missionTitle3"> Our <span className="purple">Ultimate</span> Goal!</h4>
-    <p className="statement3"> 
+    <div className="statement3"> 
     Together, we'll grow as traders, 
     learning from each other's successes and challenges,
      and ultimately achieving our financial goals.
-    </p>
-
+    </div>
    </div>
-
     </div>
   )
 }
