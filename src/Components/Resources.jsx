@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Resources.css"
 import buynsell from "./images/buynsell.png"
 import news from "./images/news-icon.png"
 import strategy from "./images/strategy-icon.png"
 import chat from "./images/chat-icon.png"
 import think from "./images/think-icon.png"
+import AOS from 'aos'
+
+
 
 function Resources() {
 
-
+  useEffect(() => {
+    AOS.refresh(); // Reinitialize AOS to account for new content
+  }, []);
 
 let imageArr = [
   {
@@ -40,7 +45,7 @@ let imageArr = [
   return (
   
     <div className="resources" id="resources"> 
-    <h2 className="resource-title">Resources</h2>
+    <h2 className="resource-title" data-aos="zoom-in">Resources</h2>
 <div className="imageMap row">
 {imageArr.map ( img => (
       <div className="imageCon column">

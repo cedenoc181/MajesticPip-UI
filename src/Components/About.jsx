@@ -2,7 +2,7 @@ import React from 'react'
 import "./About.css"
 import Image1 from "./images/signal-icon.png"
 import { useNavigate } from "react-router-dom";
-import { useRef } from 'react';
+import  {useRef} from 'react';
 import emailjs from '@emailjs/browser';
 
 function About() {
