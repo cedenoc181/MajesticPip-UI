@@ -5,7 +5,7 @@ import Nav from './Nav';
 import Home from './Home';
 import Currencybanner from './Currencybanner';
 import About from './About';
-import Testimonies from './Testimonies';
+import Mission from './Mission';
 import Newsletter from './Newsletter';
 import Footer from './Footer';
 import Privacy from './Privacy';
@@ -53,7 +53,7 @@ function App() {
             <p class="loadingQue">Loading currencies...</p> //add icon for loading ?
           )}
       <About />
-      <Testimonies />
+      <Mission />
       <Newsletter />
       </>
       )}

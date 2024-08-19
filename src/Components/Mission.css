@@ -1,4 +1,4 @@
-.testimonial .bodyTest{
+#mission{
     background-color: rgb(1, 0, 2);
 }
 
@@ -9,7 +9,7 @@
    margin-top: 3%;
 }
 
-.testTitle {
+.missionTitle {
     color: white;
     font-size: 50px;
     padding-top: 5%;
