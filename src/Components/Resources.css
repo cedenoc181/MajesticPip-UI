@@ -13,15 +13,16 @@
 
 .imageMap {
     display: flex;
-    align-items: center;
+    text-align:justify;
     justify-content: center;
+    padding: 7%; 
 }
 
 .imageCon {
     flex: 30%;
     max-width: 33.33%;
     max-height: 33.33%;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 .imageCard {
