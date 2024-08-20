@@ -2,6 +2,10 @@
     background: black;
 }
 
+.privacy-container {
+    padding: 5%;
+}
+
 .privacy-title {
     color: white;
     font-size: 50px;
@@ -18,9 +22,19 @@
     color: white;
     font-size: 30px;
     font-weight: 400;
+    padding-top: 2%;
 }
 
 .policy-text {
     color: white;
     font-size: 20px;
+}
+
+.space {
+    padding-top: 2%;
+}
+
+.underline {
+    text-decoration: underline;
+    margin-right: 8px;
 }
