@@ -75,20 +75,28 @@ function About() {
     <label className="form-input-label" for="exampleInputName">Name</label>
     <input type="name" className="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter your name" name="name"/>
   </div>
+
+
   <div className="form-group">
     <label className="form-input-label" for="exampleInputEmail1">Email address</label>
     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" name="email"/>
     <small id="emailHelp" className="form-text text-muted">*We'll never share your email with anyone else.</small>
   </div>
+
+
   <div className="form-check">
-    <label className="form-check-label" for="exampleCheck1">I agree to the website <span class="policy"><p style={{display: 'inline-block'}} onClick={()=> {
+  <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
+    <label className="form-check-label" htmlFor="exampleCheck1">I agree to the website <span class="policy"><span style={{display: 'inline-block', margin: 0 }} onClick={()=> {
         navigate("/privacy");
-      }}>privacy policy</p></span></label>
-       <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
+      }}> privacy policy</span></span></label>
   </div>
+
+
   <div className="btn-container">
   <button type="submit" className="submit-btn" value="Send">Join!</button>
   </div>
+
+
   </div>
 </form>
 {/* BS card for discord link  */}

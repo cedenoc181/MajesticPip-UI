@@ -38,14 +38,35 @@
 }
 
 .form-check {
+    display: flex;
+    align-items: center;
     padding-top: 2% ;
 }
 
-.policy {
-    color: rgb(167, 102, 227);
-    font-style:bold; 
+.form-check-label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    line-height: 1.5; /* Adjust as needed */
+  }
+  
+.form-check-input {
+    margin-right: 8px; /* Adjust the spacing as needed */
+  }
+
+  .policy {
+    color: rgb(167, 102, 227); /* Purple text color */
     font-weight: 700;
-}
+    cursor: pointer;
+    margin-left: 8px; /* Adjust the space as needed */
+  }
+
+.policy span {
+    display: inline-block; /* Ensure the link is inline with the text */
+    vertical-align: middle; /* Ensures vertical alignment */
+    line-height: 1.5; /* Aligns with label's line height */
+  }
+
 .form-control {
     border-radius: 20px;
     width: 75%;
