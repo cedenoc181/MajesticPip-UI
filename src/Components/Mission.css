@@ -7,6 +7,7 @@
 }
 
 .missionTitle {
+    will-change: scroll-position;
     color: white;
     font-size: 50px;
     padding-top: 5%;

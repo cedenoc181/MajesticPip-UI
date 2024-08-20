@@ -1,7 +1,7 @@
 import './App.css';
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 import { Routes, Route, useLocation} from "react-router-dom";
-import {useState, useEffect} from "react"
+import React, {useState, useEffect} from "react"
 import Nav from './Nav';
 import Home from './Home';
 import Currencybanner from './Currencybanner';
@@ -14,6 +14,8 @@ import Privacy from './Privacy';
 function App() {
   //currencies to store API
   const [currencies, setCurrencies] = useState([]);
+
+  const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
    useEffect(() => {
     const fetchData = async () => {

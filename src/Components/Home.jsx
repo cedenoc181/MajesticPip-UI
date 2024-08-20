@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Suspense} from 'react'
 
 
 // I passed down the Spline import from APP.js to improve the 
@@ -9,7 +9,9 @@ function Home({Spline}) {
     <div id="home">
       {/* <img src={} alt=""/> */}
       {/*new code testing out performance*/ }
-  <Spline scene="https://prod.spline.design/AGX4YCccdi9F5row/scene.splinecode" /> 
+      <Suspense fallback={<div>Loading 3D animation...</div>}>
+  <Spline rel="preload" scene="https://prod.spline.design/AGX4YCccdi9F5row/scene.splinecode" /> 
+      </Suspense >
    </div>
   )
 }

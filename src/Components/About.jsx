@@ -5,11 +5,13 @@ import { useNavigate } from "react-router-dom";
 import  {useRef} from 'react';
 import emailjs from '@emailjs/browser';
 
+
 function About() {
 
         const navigate = useNavigate();
 
         const form = useRef();
+
 
         emailjs.init({
                 publicKey: 'j8scqiH2-jh8K4TK9',

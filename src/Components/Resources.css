@@ -3,7 +3,6 @@
 }
 
 .resource-title {
-    will-change: scroll-position;
     color: white;
     font-size: 55px;
     padding-top: 8%;
