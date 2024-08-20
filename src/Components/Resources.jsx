@@ -49,7 +49,7 @@ let imageArr = [
 <div className="imageMap row">
 {imageArr.map ( img => (
       <div className="imageCon column">
-      <img className="imageCard" src={img.pic} alt={img.alt}/>
+      <img className="imageCard" data-aos="zoom-in-down" src={img.pic} alt={img.alt}/>
       <p className="imageDesc">{img.picDesc}</p>
     </div>
 ))}
