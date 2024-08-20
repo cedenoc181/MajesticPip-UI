@@ -5,7 +5,7 @@ import AOS from 'aos'
 function Mission() {
 
   useEffect(() => {
-    AOS.refresh(); // Reinitialize AOS to account for new content
+    AOS.init({duration: 1000}); // Reinitialize AOS to account for new content
   }, []);
   
 
@@ -13,7 +13,7 @@ function Mission() {
     <div id="mission" className="mission">
 
     <div className="statement-container">
-    <h2 className="missionTitle" data-aos="zoom-in" data-aos-duration="1000">Our <span className="purple">Mission</span></h2>
+    <h2 className="missionTitle" data-aos="zoom-in">Our <span className="purple">Mission</span></h2>
     <p className="statement">
        At MajesticPips, our mission is to empower traders by building a vibrant and supportive currency trading community. 
        We believe in the power of collective knowledge and collaboration. By joining our community, 
