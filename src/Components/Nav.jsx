@@ -25,7 +25,7 @@ function Nav() {
     </button>
     <div className="nav-links collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav m-auto">
-        <a className="nav-link active" aria-current="page" href="home">Home</a>
+        <a className="nav-link active" aria-current="page" href="#home">Home</a>
         <a className="nav-link" href="#about">About us</a>
         <a className="nav-link" href="#resources">Resources</a>
         <a className="nav-link" href="#mission">Mission</a>

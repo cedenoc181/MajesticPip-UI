@@ -1,4 +1,5 @@
 import './App.css';
+import Spline from '@splinetool/react-spline';
 import { Routes, Route, useLocation} from "react-router-dom";
 import {useState, useEffect} from "react"
 import Nav from './Nav';
@@ -45,16 +46,16 @@ function App() {
       </header>
       {location.pathname !== "/privacy" && (
         <>
-      <Home path="/home"/>
+      <Home path="/home" Spline={Spline}/>
          {/* Render your currencies data here */}
          {currencies && currencies.length > 0 ? (
               <Currencybanner currency={currencies} />
           ) : (
             <p class="loadingQue">Loading currencies...</p> //add icon for loading ?
           )}
-      <About />
-      <Resources />
-      <Mission />
+      <About path="/about"/>
+      <Resources path="/reources"/>
+      <Mission path="mission"/>
       </>
       )}
       <Routes>

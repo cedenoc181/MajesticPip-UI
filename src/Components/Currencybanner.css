@@ -22,7 +22,9 @@
 }
 
 .bannerTitle {
+    will-change: scroll-position;
     color: rgb(195, 153, 244);
+    font-size: 40px;
     font-family: 'Merriweather';
     display: flex;
     justify-content: center;
