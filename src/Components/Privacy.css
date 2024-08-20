@@ -1,5 +1,10 @@
 #privacy{
     background: black;
-    height: 100%;
 }
 
+.privacy-title {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    
+}
