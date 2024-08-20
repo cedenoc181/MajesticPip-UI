@@ -6,5 +6,21 @@
     color: white;
     font-size: 50px;
     font-weight: 700;
-    
+}
+
+.sub-head {
+    color: rgb(192, 91, 229);
+    font-size: 35px;
+    font-weight: 500; 
+}
+
+.segment {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.policy-text {
+    color: white;
+    font-size: 20px;
 }
