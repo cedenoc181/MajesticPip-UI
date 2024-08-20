@@ -12,7 +12,7 @@ import AOS from 'aos'
 function Resources() {
 
   useEffect(() => {
-    AOS.init({duration: 1000}); // Reinitialize AOS to account for new content
+    AOS.init({duration: 1500}); // Reinitialize AOS to account for new content
   }, []);
 
 let imageArr = [

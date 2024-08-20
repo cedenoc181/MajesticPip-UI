@@ -8,11 +8,11 @@ function Privacy() {
     <div id="privacy" className="privacy">
       <div className="privacy-container">
         <div class="privacy-title">
-          MajesticPips server <span className="purple">Privacy Policy</span>
+          MajesticPips server <span className="purple">privacy policy</span>
         </div>
 
         <div>
-          <h3 className="sub-head">Privacy Policy</h3>
+          <h3 className="sub-head">Privacy policy</h3>
           <div className="policy-text">Effective Date: 08/20/2024</div>
           <br />
           <h4 className="segment">

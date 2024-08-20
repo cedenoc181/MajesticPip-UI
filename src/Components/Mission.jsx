@@ -5,7 +5,7 @@ import AOS from 'aos'
 function Mission() {
 
   useEffect(() => {
-    AOS.init({duration: 1000}); // Reinitialize AOS to account for new content
+    AOS.init({duration: 1500}); // Reinitialize AOS to account for new content
   }, []);
   
 
