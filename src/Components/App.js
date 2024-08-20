@@ -53,7 +53,7 @@ function App() {
          {currencies && currencies.length > 0 ? (
               <Currencybanner currency={currencies} />
           ) : (
-            <p class="loadingQue">Loading currencies...</p> //add icon for loading ?
+            <div class="loadingQue">Loading currencies...</div> //add icon for loading ?
           )}
       <About path="/about"/>
       <Resources path="/reources"/>
