@@ -197,9 +197,13 @@ h1 {
     .discord-server-character {
         font-size: 25px;
     }
-    .form {
-
-    }
+    .form-control {
+        width: 95%;    
+      }
+      .form {
+       width: 95%;
+       margin-left: 15%;
+      }
 }
 
 @media only screen and (max-width: 768px) {
