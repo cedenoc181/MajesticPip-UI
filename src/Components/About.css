@@ -199,11 +199,18 @@ h1 {
         font-size: 25px;
     }
     .form-control {
-        width: 95%;    
+        width: 85%;    
       }
       .form {
-       width: 95%;
+       width: 85%;
        margin-left: 15%;
+      }
+      .form-group {
+        padding: 10px;
+        padding-right: 0px;
+      }
+      .btn-container {
+        padding-top: 2% !important;
       }
 }
 
