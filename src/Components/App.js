@@ -19,7 +19,7 @@ function App() {
 
    useEffect(() => {
     const fetchData = async () => {
-      const url = 'http://localhost:3001/scrape-data';
+      const url = 'http://localhost:3001/scrape';
       const options = {
         method: 'GET'
       };
