@@ -1,59 +1,173 @@
 
-#currencybanner  {
-    background-color: rgb(3, 2, 4);
-    height: 100%;
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    overflow-x: auto;
 }
 
-.currencybanner {
-    display: flex;
-    justify-items:flex-start;
-    overflow: scroll; 
-    border-top: solid 1.5px #ffffff;
-    border-bottom: solid 1.5px #ffffff;
 
+
+#currencybanner {
+  background-color: rgb(3, 2, 4);
+  height: 100%;
+} */
+
+/* .currency-data {
+  display: flex;
+  justify-items: flex-start;
+  width: fit-content;
+  border-top: solid 1.5px #ffffff;
+  border-bottom: solid 1.5px #ffffff;
 }
 
 .container {
-    margin: 5px;
+  margin: 5px;
 }
 
 .usd {
-    color: white;
+  color: white;
 }
 
 .bannerTitle {
-    color: rgb(195, 153, 244);
-    font-size: 40px;
-    font-family: 'Merriweather';
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    }
+  color: rgb(195, 153, 244);
+  font-size: 40px;
+  font-family: "Merriweather";
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
-    .bannerTitle .usd {
-        margin-right: 5px; 
-      }
+.bannerTitle .usd {
+  margin-right: 5px;
+  
+} */
 
-.cname {
-    font-size: 18px; /*consider using media query to make font size appropriate for smaller screen sizes  */
-    font-weight: 600;
-    color: rgb(171, 97, 240);
- 
-    
+/* .cname {
+  font-size: 18px; 
+  font-weight: 600;
+  color: rgb(171, 97, 240);
 }
 
 .currencyticker {
-    font-size: 22px;
-    Font-weight: 700;
-    color: rgb(236, 211, 250);
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(236, 211, 250);
 }
 
 .currencyConversion {
-    color: rgb(242, 242, 228);
-    padding-left: 15px;
+  color: rgb(242, 242, 228);
+  padding-left: 15px;
 }
 
 .ticker-cards {
-    display: flex;
+  display: flex;
+} */
+
+/* Meadia query adjustments for tablets */
+
+/* @media only screen and (max-width: 1024px) {
+    .currency-data {
+        overflow-x: scroll !important;
+        display: flex;
+        justify-content: flex-start;
+        width: fit-content;
+        border-top: solid 1.5px #ffffff;
+        border-bottom: solid 1.5px #ffffff;
+      }
+
+.container {
+    width: 100%;
+    overflow-x: hidden;
 }
 
+} */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#currencybanner {
+  background-color: rgb(3, 2, 4);
+  height: 100%;
+}
+
+.currency-data {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 5px; /* Reduced gap for closer spacing */
+  padding: 10px; 
+  border-top: solid 1.5px #ffffff;
+  border-bottom: solid 1.5px #ffffff;
+}
+
+.container {
+  margin: 5px;
+  flex-shrink: 0; /* Prevents shrinking */
+  width: auto; 
+}
+
+.usd {
+  color: white;
+}
+
+.bannerTitle {
+  color: rgb(195, 153, 244);
+  font-size: 40px;
+  font-family: "Merriweather";
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.bannerTitle .usd {
+  margin-right: 5px;
+}
+
+.cname {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(171, 97, 240);
+}
+
+.currencyticker {
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(236, 211, 250);
+}
+
+.currencyConversion {
+  color: rgb(242, 242, 228);
+  padding-left: 15px;
+}
+
+.ticker-cards {
+  display: flex;
+}
+
+/* Media query adjustments for tablets */
+
+@media only screen and (max-width: 1024px) {
+    .currency-data {
+        overflow-x: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 3px; /* Reduced gap for even closer spacing on smaller screens */
+        padding: 5px;
+        border-top: solid 1.5px #ffffff;
+        border-bottom: solid 1.5px #ffffff;
+    }
+
+    .container {
+        flex-shrink: 0;
+        width: fit-content;
+        overflow-x: hidden;
+        padding: 3px;
+    
+    }
+}
