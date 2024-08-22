@@ -1,148 +1,233 @@
 #about {
-    background-color: rgb(3, 2, 4);
+  background-color: rgb(3, 2, 4);
 }
 
 .hero {
-    float: right !important;
+  float: right !important;
 }
-.container p, h1 {
-    color: white !important;
+.about-container p,
+h1 {
+  color: white !important;
 }
 .figure-img {
-   height: 450px !important;
+  height: 450px !important;
 }
+
+.about-container {
+    padding-left: 10%;
+}
+
+
 .form {
-    margin-left: 22%;
+  margin-left: 22%;
 }
 
 .form-container {
-    width: 75%;
-    background-color: rgb(174, 154, 204, 0.1);
-    border-radius: 20px;
-    padding: 15px;
-    border: 2px solid rgb(203, 163, 244)
+  width: 75%;
+  background-color: rgb(174, 154, 204, 0.1);
+  border-radius: 20px;
+  padding: 15px;
+  border: 2px solid rgb(203, 163, 244);
 }
 
 .form-group {
-    color: rgb(167, 102, 227) !important;
-    padding: 15px;
+  color: rgb(167, 102, 227) !important;
+  padding: 15px;
 }
 
 .form-input-label {
-    font-size: large;
-    font-weight: 600;
+  font-size: large;
+  font-weight: 600;
 }
 
-.form-check-label, .form-text{
-    color: white !important;
+.form-check-label,
+.form-text {
+  color: white !important;
 }
 
 .form-check {
-    display: flex;
-    align-items: center;
-    padding-top: 2% ;
+  display: flex;
+  align-items: center;
+  padding-top: 2%;
 }
 
 .form-check-label {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    line-height: 1.5; /* Adjust as needed */
-  }
-  
-.form-check-input {
-    margin-right: 8px; /* Adjust the spacing as needed */
-  }
+  display: flex;
+  align-items: center;
+  margin: 0;
+  line-height: 1.5; /* Adjust as needed */
+}
 
-  .policy {
-    color: rgb(167, 102, 227); /* Purple text color */
-    font-weight: 700;
-    cursor: pointer;
-    margin-left: 8px; /* Adjust the space as needed */
-  }
+.form-check-input {
+  margin-right: 8px; /* Adjust the spacing as needed */
+}
+
+.policy {
+  color: rgb(167, 102, 227); /* Purple text color */
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 8px; /* Adjust the space as needed */
+}
 
 .policy span {
-    display: inline-block; /* Ensure the link is inline with the text */
-    vertical-align: middle; /* Ensures vertical alignment */
-    line-height: 1.5; /* Aligns with label's line height */
-  }
+  display: inline-block; /* Ensure the link is inline with the text */
+  vertical-align: middle; /* Ensures vertical alignment */
+  line-height: 1.5; /* Aligns with label's line height */
+}
 
 .form-control {
-    border-radius: 20px;
-    width: 75%;
-    border: 2px solid #8259f5;
+  border-radius: 20px;
+  width: 75%;
+  border: 2px solid #8259f5;
 }
-.form-group, .form-check {
-    margin-left: 10% !important;
+.form-group,
+.form-check {
+  margin-left: 10% !important;
 }
 
 .submit-btn {
-    background-color: transparent;
-    color: white;
-    border: 2px solid #8259f5;
-    padding: 10px 20px 10px 20px;
-    transition: color 0.3s, border-color 0.3s; 
-    cursor: pointer;
-    border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #8259f5;
+  padding: 10px 20px 10px 20px;
+  transition: color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
 .submit-btn:hover {
-    background-color: #9f7bff; 
-  }
+  background-color: #9f7bff;
+}
 
 .btn-container {
-margin-left: 25% !important;
-padding-top: 5% !important;
+  margin-left: 25% !important;
+  padding-top: 5% !important;
 }
 
 .display-4 {
-font-weight: 600;
+  font-weight: 600;
 }
 
 .display-4-span {
-font-weight: 800;
-color: #da91f4 !important;
+  font-weight: 800;
+  color: #da91f4 !important;
 }
 
 .lead {
-    font-size:x-large;
+  font-size: x-large;
 }
 
 .discord-server-character {
-    color: #da91f4 !important;
-    font-size: xx-large;
+  color: #da91f4 !important;
+  font-size: xx-large;
 }
 
 .cta {
-    font-size: x-large;
+  font-size: x-large;
 }
 .row::after {
-    content: '';
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 [class*="col-"] {
-    float: left;
-    padding: 15px;
+  float: left;
+  padding: 15px;
+}
 
-  }
-
-  [class*="col-"] {
-    width: 100%;
-  }
+[class*="col-"] {
+  width: 100%;
+}
 
 /* for desktop */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50% ;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-  
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+
+
+/* tablet screen size optimization */
+@media only screen and (max-width : 900px) {
+    .figure-img {
+        height: 350px !important;
+    }
+    .display-4 {
+        font-size: 40px;
+    }
+    .about-container {
+        padding-left: 5%;
+    }
+    .about-container p {
+        font-size: 22px;
+    }
+    .discord-server-character {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .display-4 {
+        font-size: 30px;
+    }
+    .about-container {
+        padding-left: 3%;
+    }
+    .about-container p {
+        font-size: 20px;
+    }
+    .discord-server-character {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .figure-img {
+        height: 250px !important;
+    }
+    .display-4 {
+        font-size: 22px;
+    }
+    .about-container {
+        padding-left: 5px;
+    }
+    .about-container p {
+        font-size: 16px;
+    }
+    .discord-server-character {
+        font-size: 18px;
+    }
+}

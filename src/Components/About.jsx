@@ -1,6 +1,6 @@
 import React from 'react'
 import "./About.css"
-import Image1 from "./images/signal-icon.png"
+import PhoneTrading from "./images/signal-icon.png"
 import { useNavigate } from "react-router-dom";
 import  {useRef} from 'react';
 import emailjs from '@emailjs/browser';
@@ -59,9 +59,9 @@ function About() {
 {/* trade results */}
         <div class="row">
         <div class="hero col-12">     
-                <img src={Image1} class="figure-img img-fluid rounded" alt="test 1"/>
+                <img src={PhoneTrading} class="figure-img img-fluid rounded" alt="trading on phone image"/>
                 <div class="jumbotron jumbotron-fluid">
-  <div class="container">
+  <div class="about-container">
     <h1 class="display-4">Join Our Free <span class="display-4-span">Trading Community</span></h1>
     <p class="lead">Unlock the Power of Trading Signals with a group of like minded individuals. </p>
      <p class="cta">Ready to start your path to profits? Join our <span class="discord-server-character">Discord Server Today!</span> </p>  {/*edit this span class */}
