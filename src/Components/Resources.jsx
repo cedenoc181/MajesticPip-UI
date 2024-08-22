@@ -12,7 +12,7 @@ import AOS from 'aos'
 function Resources() {
 
   useEffect(() => {
-    AOS.init({duration: 1500}); // Reinitialize AOS to account for new content
+    AOS.init(); // Reinitialize AOS to account for new content
   }, []);
 
 let imageArr = [
@@ -45,7 +45,7 @@ let imageArr = [
   return (
   
     <div className="resources" id="resources"> 
-    <h2 className="resource-title" data-aos="zoom-in">Resources</h2>
+    <h2 className="resource-title" data-aos="zoom-in" data-aos-duration = "1500">Resources</h2>
 <div className="imageMap row">
 {imageArr.map ( img => (
       <div className="imageCon column">
