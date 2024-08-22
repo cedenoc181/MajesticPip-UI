@@ -1,8 +1,7 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #currencybanner {
@@ -15,7 +14,7 @@
   flex-wrap: nowrap;
   overflow-x: auto;
   gap: 5px; /* Reduced gap for closer spacing */
-  padding: 10px; 
+  padding: 10px;
   border-top: solid 1.5px #ffffff;
   border-bottom: solid 1.5px #ffffff;
 }
@@ -23,7 +22,7 @@
 .container {
   margin: 5px;
   flex-shrink: 0; /* Prevents shrinking */
-  width: auto; 
+  width: auto;
 }
 
 .usd {
@@ -67,35 +66,34 @@
 /* Media query adjustments for tablets and phones */
 
 @media only screen and (max-width: 1024px) {
-    .currency-data {
-        overflow-x: auto;
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 3px; /* Reduced gap for even closer spacing on smaller screens */
-        padding: 5px;
-        border-top: solid 1.5px #ffffff;
-        border-bottom: solid 1.5px #ffffff;
-    }
+  .currency-data {
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 3px; /* Reduced gap for even closer spacing on smaller screens */
+    padding: 5px;
+    border-top: solid 1.5px #ffffff;
+    border-bottom: solid 1.5px #ffffff;
+  }
 
-    .container {
-        flex-shrink: 0;
-        width: fit-content;
-        overflow-x: hidden;
-        padding: 3px;
-    
-    }
+  .container {
+    flex-shrink: 0;
+    width: fit-content;
+    overflow-x: hidden;
+    padding: 3px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
-    .bannerTitle {
-        font-size: 30px;
-    }
+  .bannerTitle {
+    font-size: 30px;
+  }
 
-    .currencyticker {
-        font-size: 18px;
-    }
+  .currencyticker {
+    font-size: 18px;
+  }
 
-    .currencyConversion  {
-        font-size: 18px;
-    }
+  .currencyConversion {
+    font-size: 18px;
+  }
 }
