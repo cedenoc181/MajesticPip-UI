@@ -23,7 +23,7 @@ h1 {
 }
 
 .form-container {
-  width: 75%;
+  width: 90%;
   background-color: rgb(174, 154, 204, 0.1);
   border-radius: 20px;
   padding: 15px;
@@ -33,6 +33,7 @@ h1 {
 .form-group {
   color: rgb(167, 102, 227) !important;
   padding: 15px;
+  padding-right: 0px;
 }
 
 .form-input-label {
