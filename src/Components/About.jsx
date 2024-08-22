@@ -59,7 +59,7 @@ function About() {
 {/* trade results */}
         <div class="row">
         <div class="hero col-12">     
-                <img src={PhoneTrading} class="figure-img img-fluid rounded" alt="trading on phone image"/>
+                <img src={PhoneTrading} class="figure-img img-fluid rounded" alt="phone"/>
                 <div class="jumbotron jumbotron-fluid">
   <div class="about-container">
     <h1 class="display-4">Join Our Free <span class="display-4-span">Trading Community</span></h1>

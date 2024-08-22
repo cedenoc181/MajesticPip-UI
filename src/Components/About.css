@@ -197,6 +197,9 @@ h1 {
     .discord-server-character {
         font-size: 25px;
     }
+    .form {
+
+    }
 }
 
 @media only screen and (max-width: 768px) {
