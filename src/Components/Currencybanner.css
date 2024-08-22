@@ -1,90 +1,4 @@
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-    overflow-x: auto;
-}
-
-
-
-#currencybanner {
-  background-color: rgb(3, 2, 4);
-  height: 100%;
-} */
-
-/* .currency-data {
-  display: flex;
-  justify-items: flex-start;
-  width: fit-content;
-  border-top: solid 1.5px #ffffff;
-  border-bottom: solid 1.5px #ffffff;
-}
-
-.container {
-  margin: 5px;
-}
-
-.usd {
-  color: white;
-}
-
-.bannerTitle {
-  color: rgb(195, 153, 244);
-  font-size: 40px;
-  font-family: "Merriweather";
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.bannerTitle .usd {
-  margin-right: 5px;
-  
-} */
-
-/* .cname {
-  font-size: 18px; 
-  font-weight: 600;
-  color: rgb(171, 97, 240);
-}
-
-.currencyticker {
-  font-size: 22px;
-  font-weight: 700;
-  color: rgb(236, 211, 250);
-}
-
-.currencyConversion {
-  color: rgb(242, 242, 228);
-  padding-left: 15px;
-}
-
-.ticker-cards {
-  display: flex;
-} */
-
-/* Meadia query adjustments for tablets */
-
-/* @media only screen and (max-width: 1024px) {
-    .currency-data {
-        overflow-x: scroll !important;
-        display: flex;
-        justify-content: flex-start;
-        width: fit-content;
-        border-top: solid 1.5px #ffffff;
-        border-bottom: solid 1.5px #ffffff;
-      }
-
-.container {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-} */
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -150,7 +64,7 @@
   display: flex;
 }
 
-/* Media query adjustments for tablets */
+/* Media query adjustments for tablets and phones */
 
 @media only screen and (max-width: 1024px) {
     .currency-data {
@@ -169,5 +83,19 @@
         overflow-x: hidden;
         padding: 3px;
     
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .bannerTitle {
+        font-size: 30px;
+    }
+
+    .currencyticker {
+        font-size: 18px;
+    }
+
+    .currencyConversion  {
+        font-size: 18px;
     }
 }
