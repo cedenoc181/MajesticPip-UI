@@ -245,4 +245,24 @@ h1 {
     .discord-server-character {
         font-size: 18px;
     }
+    .form-container {
+        padding: 5px;
+    }
+    .form-control {
+        width: 85%;    
+      }
+      .form {
+       width: 85%;
+       margin-left: 10%;
+      }
+      .form-group {
+        padding: 6px;
+        padding-right: 0px;
+      }
+      .btn-container {
+        padding-top: 2% !important;
+      }
+      .submit-btn {
+        padding: 7px 14px 7px 14px;
+      }
 }
