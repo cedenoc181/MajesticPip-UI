@@ -54,3 +54,46 @@
     margin-left: 45%;
     padding-top: 2%;
 }
+
+@media only screen and (max-width: 1025px) {
+    .missionTitle, .missionTitle2, .missionTitle3 {
+        font-size: 40px;
+    }
+    .statement, .statement2, .statement3 {
+        font-size: 20px;
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 821px) {
+    .statement {
+        margin-left: 10% !important;
+    }
+    .statement2 {
+        margin-left: 20% !important;
+    }
+    
+    .statement3 {
+        margin-left: 35% !important;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .missionTitle, .missionTitle2, .missionTitle3 {
+        font-size: 30px;
+        text-align: center;
+        margin-left: 0 !important;
+    }
+    
+    .statement, .statement2, .statement3 {
+        text-align: center;
+        font-size: 16px;
+       margin-left: 0 !important;
+    }
+
+
+    .statement-container {
+      padding: 15%;
+ 
+    }
+}
