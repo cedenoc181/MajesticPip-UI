@@ -60,10 +60,22 @@
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
     .imageCon {
         flex: 50%;
         max-width: 50%;
         max-height: 50%;
     }
+}
+
+@media only screen and (max-width: 440px) {
+    .imageCon {
+        flex: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .imageCard {
+        margin-left: 35%;
+    }
+
 }
