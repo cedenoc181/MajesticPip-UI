@@ -21,9 +21,7 @@ function Nav() {
         }} />
         
     </div>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onClick={()=> {
-        console.log("toggle navigation");
-        }}>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon navbar-dark"></span>
     </button>
     <div className="nav-links collapse navbar-collapse" id="navbarNavAltMarkup">
