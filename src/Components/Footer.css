@@ -32,3 +32,22 @@
     max-height: 60px;
     margin-left: 7.5%;
 }
+
+@media only screen and (max-width: 1024px) {
+    .discord-icon {
+        padding-bottom: 10px;
+        margin-left: 8%
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .discord-icon {
+        margin-left: 9.2%
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .discord-icon {
+        margin-left: 10%
+    }
+}
