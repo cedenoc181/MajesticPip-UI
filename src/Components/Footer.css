@@ -1,6 +1,6 @@
 #footerCon {
     background: black;
-    /* text-decoration: overline white; */
+    overflow-x: auto;
     padding-top: 15%;
 }
 

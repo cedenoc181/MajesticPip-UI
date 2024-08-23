@@ -2,6 +2,7 @@ import React from 'react';
 import "./Nav.css";
 import logo from "./images/MajesticPips-logo-2.png"
 import "bootstrap/js/src/collapse.js";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from "react-router-dom";
 
 function Nav() {
@@ -15,12 +16,14 @@ function Nav() {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid ">
     <div className="navbar-brand" >
-      <img src={logo} class="logo" alt="logo" onClick={()=> {
+      <img src={logo} className="logo" alt="logo" onClick={()=> {
         navigate("/home")
         }} />
         
     </div>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onClick={()=> {
+        console.log("toggle navigation");
+        }}>
       <span className="navbar-toggler-icon navbar-dark"></span>
     </button>
     <div className="nav-links collapse navbar-collapse" id="navbarNavAltMarkup">

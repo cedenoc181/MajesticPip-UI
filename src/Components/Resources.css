@@ -1,3 +1,7 @@
+#resources {
+    overflow-x: auto;
+}
+
 .resources {
     background-color: rgb(0, 0, 1);
 }

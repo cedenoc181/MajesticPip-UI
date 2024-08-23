@@ -1,5 +1,6 @@
 #about {
   background-color: rgb(3, 2, 4);
+  overflow-x: auto;
 }
 
 .hero {
@@ -14,9 +15,8 @@ h1 {
 }
 
 .about-container {
-    padding-left: 10%;
+  padding-left: 10%;
 }
-
 
 .form {
   margin-left: 22%;
@@ -179,109 +179,105 @@ h1 {
   width: 100%;
 }
 
-
-
 /* tablet screen size optimization */
-@media only screen and (max-width : 900px) {
-    .figure-img {
-        height: 350px !important;
-    }
-    .display-4 {
-        font-size: 40px;
-    }
-    .about-container {
-        padding-left: 5%;
-    }
-    .about-container p {
-        font-size: 22px;
-    }
-    .discord-server-character {
-        font-size: 25px;
-    }
-    .form-control {
-        width: 85%;    
-      }
-      .form {
-       width: 85%;
-       margin-left: 15%;
-      }
-      .form-group {
-        padding: 10px;
-        padding-right: 0px;
-      }
-      .btn-container {
-        padding-top: 2% !important;
-      }
+@media only screen and (max-width: 900px) {
+  .figure-img {
+    height: 350px !important;
+  }
+  .display-4 {
+    font-size: 40px;
+  }
+  .about-container {
+    padding-left: 5%;
+  }
+  .about-container p {
+    font-size: 22px;
+  }
+  .discord-server-character {
+    font-size: 25px;
+  }
+  .form-control {
+    width: 85%;
+  }
+  .form {
+    width: 85%;
+    margin-left: 15%;
+  }
+  .form-group {
+    padding: 10px;
+    padding-right: 0px;
+  }
+  .btn-container {
+    padding-top: 2% !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .display-4 {
-        font-size: 30px;
-    }
-    .about-container {
-        padding-left: 3%;
-    }
-    .about-container p {
-        font-size: 20px;
-    }
-    .discord-server-character {
-        font-size: 24px;
-    }
+  .display-4 {
+    font-size: 30px;
+  }
+  .about-container {
+    padding-left: 3%;
+  }
+  .about-container p {
+    font-size: 20px;
+  }
+  .discord-server-character {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
-
-    .figure-img {
-        height: 250px !important;
-    }
-    .display-4 {
-        font-size: 22px;
-    }
-    .about-container {
-        padding-left: 5px;
-    }
-    .about-container p {
-        font-size: 16px;
-    }
-    .discord-server-character {
-        font-size: 18px;
-    }
-    .form-container {
-        padding: 5px;
-    }
-    .form-control {
-        width: 85%;    
-      }
-      .form {
-       width: 85%;
-       margin-left: 10%;
-      }
-      .form-group {
-        padding: 6px;
-        padding-right: 0px;
-      }
-      .btn-container {
-        padding-top: 2% !important;
-      }
-      .submit-btn {
-        padding: 7px 14px 7px 14px;
-      }
+  .figure-img {
+    height: 250px !important;
+  }
+  .display-4 {
+    font-size: 22px;
+  }
+  .about-container {
+    padding-left: 5px;
+  }
+  .about-container p {
+    font-size: 16px;
+  }
+  .discord-server-character {
+    font-size: 18px;
+  }
+  .form-container {
+    padding: 5px;
+  }
+  .form-control {
+    width: 85%;
+  }
+  .form {
+    width: 85%;
+    margin-left: 10%;
+  }
+  .form-group {
+    padding: 6px;
+    padding-right: 0px;
+  }
+  .btn-container {
+    padding-top: 2% !important;
+  }
+  .submit-btn {
+    padding: 7px 14px 7px 14px;
+  }
 }
 
 @media only screen and (max-width: 430px) {
-    .form {
-        width: 100%;
-        margin-left: 2%;
-       }
-
-    .form-check-label {
-        font-size: 14px;
-    }
+  .form {
+    width: 100%;
+    margin-left: 2%;
   }
 
-  @media only screen and (max-width: 375px) {
-
-    .form-check-label {
-        font-size: 12px;
-    }
+  .form-check-label {
+    font-size: 14px;
   }
+}
+
+@media only screen and (max-width: 375px) {
+  .form-check-label {
+    font-size: 12px;
+  }
+}
