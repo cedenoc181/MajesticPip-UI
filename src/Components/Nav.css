@@ -1,11 +1,12 @@
 .navbar {
-    background-color: #020203 !important;
-    max-height: 85px !important;
+  background-color: #020203 !important;
+  max-height: 85px !important;
 }
 
- .btn, .navbar-brand{
-    color: white !important;
-    font-size: x-large;
+.btn,
+.navbar-brand {
+  color: white !important;
+  font-size: x-large;
 }
 
 .nav-link {
@@ -13,97 +14,92 @@
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    margin-left: 25px;
+  width: 100px;
+  height: 100px;
+  margin-left: 25px;
 }
 
 .btn {
-    background-color: transparent;
-  border: 2px solid #6e00ff; 
-  color: #6e00ff; 
+  background-color: transparent;
+  border: 2px solid #6e00ff;
+  color: #6e00ff;
   padding: 10px 20px 10px 20px;
   cursor: pointer;
-  transition: color 0.3s, border-color 0.3s; 
- 
-} 
+  transition: color 0.3s, border-color 0.3s;
+}
 
 .btn:hover {
-    color: #9f7bff; 
-    background-color: #9f7bff; 
+  color: #9f7bff;
+  background-color: #9f7bff;
+}
+
+a {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: inherit; /* Inherit color from parent on hover */
+}
+
+.nav-links .discord-btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .nav-link {
+    color: white !important;
+    font-size: x-large;
   }
 
-  a {
-    color: inherit; /* Inherit color from parent */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  a:hover {
-    color: inherit; /* Inherit color from parent on hover */
+  .navbar-nav .nav-link {
+    padding: 15px;
+    background-color: rgba(87, 70, 112, 0.4);
+    border-bottom: 1px solid #555;
   }
 
-  .nav-links .discord-btn{
-    display: flex;
-    justify-content: end;
-    align-items: center;
+  .navbar-nav .nav-link:hover {
+    background-color: #9f7bff;
   }
 
-
-  @media  only screen and (max-width: 991px) {
-
-    .navbar-nav {
-      text-align: center;
-    }
-    .nav-link {
-      color: white !important;
-      font-size: x-large;
-    }
-  
-    .navbar-nav .nav-link {
-      padding: 15px;
-      background-color: rgba(87, 70, 112, 0.4);
-      border-bottom: 1px solid #555;
-    }
-  
-    .navbar-nav .nav-link:hover {
-      background-color: #9f7bff;
-    }
-  
-    .navbar-collapse {
-      position: absolute;
-      top: 85px;
-      right: 0;
-      background-color: rgb(200, 175, 238);
-      z-index: 1;
-      border: 2px solid rgba(21, 18, 25);
-      border-radius: 10px;
-    }
-
-   
-  
-    .navbar-toggler:hover {
-      border: 2px solid #9f7bff;
-      background-color: #8f74b3;
-    }
-
-    .navbar-toggler{
-      border: 2px solid #796f94;
-    }
-
-    .navbar-toggler-icon {
-      color: white !important;
-    }
-
-    .discord-btn {
-      border: none;
-      margin-left: auto;
-      width: 100%;
-      padding-right: 38%;
-    }
+  .navbar-collapse {
+    position: absolute;
+    top: 85px;
+    right: 0;
+    background-color: rgb(200, 175, 238);
+    z-index: 1;
+    border: 2px solid rgba(21, 18, 25);
+    border-radius: 10px;
   }
 
-  @media  only screen and (max-width: 430px) {
-      .logo {
-        margin-left: 0px;
-      }
+  .navbar-toggler:hover {
+    border: 2px solid #9f7bff;
+    background-color: #8f74b3;
   }
+
+  .navbar-toggler {
+    border: 2px solid #796f94;
+  }
+
+  .navbar-toggler-icon {
+    color: white !important;
+  }
+
+  .discord-btn {
+    border: none;
+    margin-left: auto;
+    width: 100%;
+    padding-right: 38%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .logo {
+    margin-left: 0px;
+  }
+}

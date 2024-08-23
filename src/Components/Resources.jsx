@@ -22,16 +22,6 @@ let imageArr = [
   "alt": "buy-sell"
   },
   {
- "pic": news, 
-  "picDesc": "Our Currency Market News Hub provides real-time updates and expert analysis on global events impacting currency prices, helping you stay informed and make smarter trading decisions. Access the latest news, economic reports, and market reactions all in one place, tailored for our community members.",
-  "alt": "makret-news"
-},
-  {
-    "pic": strategy, 
-  "picDesc": "Engage in dynamic discussions about trading strategies, where members share insights, ideas, and approaches to navigating the currency markets. By collaborating with fellow traders, you can refine your techniques, explore new strategies, and enhance your overall trading performance.",
-  "alt": "trading-strategy"
-},
-  {
     "pic": think, 
   "picDesc": "Inexperienced members can access a range of educational resources and learning opportunities to help them build a solid foundation in currency trading.",
   "alt": "educational-resource"
@@ -40,7 +30,17 @@ let imageArr = [
     "pic": chat, 
   "picDesc": "Our discord chat is a valuable resource where you can connect with other traders, exchange ideas, and build relationships, making our community a powerful network for growth and collaboration.",
   "alt": "community-chat"
-}
+},
+{
+  "pic": news, 
+   "picDesc": "Our Currency Market News Hub provides real-time updates and expert analysis on global events impacting currency prices, helping you stay informed and make smarter trading decisions. Access the latest news, economic reports, and market reactions all in one place, tailored for our community members.",
+   "alt": "makret-news"
+ },
+   {
+     "pic": strategy, 
+   "picDesc": "Engage in dynamic discussions about trading strategies, where members share insights, ideas, and approaches to navigating the currency markets. By collaborating with fellow traders, you can refine your techniques, explore new strategies, and enhance your overall trading performance.",
+   "alt": "trading-strategy"
+ }
 ];
   return (
   
