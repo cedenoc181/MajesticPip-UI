@@ -59,7 +59,6 @@ function Resources() {
             <img
               className="imageCard"
               data-aos="zoom-in-down"
-              data-aos-duration="1500"
               src={img.pic}
               alt={img.alt}
             />

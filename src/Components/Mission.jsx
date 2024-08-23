@@ -4,13 +4,13 @@ import AOS from "aos";
 
 function Mission() {
   useEffect(() => {
-    AOS.init(); // Reinitialize AOS to account for new content
+    AOS.init({duration: 1500}); // Reinitialize AOS to account for new content
   }, []);
 
   return (
     <div id="mission" className="mission">
       <div className="statement-container">
-        <h2 className="missionTitle" data-aos="zoom-in" data-aos-duration="1500">
+        <h2 className="missionTitle" data-aos="zoom-in">
           Our <span className="purple">Mission</span>
         </h2>
         <p className="statement">
