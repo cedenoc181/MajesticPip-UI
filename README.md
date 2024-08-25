@@ -33,6 +33,41 @@ Email Sign-Up Form: Users can sign up with their email to receive an automated r
 
 Information Resources: The application includes dedicated sections for "Resources" and "About Us," offering users insights into what the community does and how they can get involved.
 
+Installation & Setup
 
+To run this application locally:
 
+Clone the repository:
 
+frontend repository 
+git clone git@github.com:cedenoc181/Majesticpips-client.git
+
+backend repository 
+git clone git@github.com:cedenoc181/Majesticpips-server.git
+
+Navigate to the project directory:
+
+cd project-directory
+
+Install the dependencies:
+
+npm install
+
+Start the development server:
+
+frontend
+npm start
+
+backend
+node server.js
+
+Access the frontend application in your browser at http://localhost:3000.
+Access the backend application in your browser at http://localhost:3001.
+
+Usage 
+
+The application is designed to serve as a sign-up page for users to join our community Discord. It provides real-time currency conversion and offers a simple, user-friendly platform that connects traders and anyone interested in currency trading.
+
+Contact
+
+For inquiries or support, please contact the developer at Christiancedenob.f@gmail.com.
