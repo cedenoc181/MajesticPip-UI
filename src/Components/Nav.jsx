@@ -42,7 +42,7 @@ function Nav() {
                 Home
               </a>
               <a className="nav-link" href="#about">
-                About us
+                Sign up!
               </a>
               <a className="nav-link" href="#resources">
                 Resources
