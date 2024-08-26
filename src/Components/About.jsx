@@ -55,6 +55,10 @@ function About() {
      setName(""); //Reset input after submission
      setEmail(""); //Reset input after submission
      setSubmitted(true); //after submission turn booleann true to send alert
+     
+     setTimeout(() => {
+      setSubmitted(false)
+     }, 5000);
   };
 
   return (
