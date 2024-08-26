@@ -43,7 +43,18 @@ function Nav() {
               }}>
                 Home
               </a>
-              <button type="button" className="discord-btn btn">
+              <a className="nav-link" href="#resources" onClick={() => {
+                navigate("/resources");
+              }}>
+                Resources
+              </a>
+              <a className="nav-link" href="#mission" onClick={() => {
+                navigate("/mission");
+              }}>
+                Mission
+              </a>
+            </div>
+            <button type="button" className="discord-btn btn">
               <a className="discord-link" href="#about" onClick={() => {
                 navigate("/about");
               }}>
@@ -59,17 +70,6 @@ function Nav() {
                 </svg>
               </a>
             </button>
-              <a className="nav-link" href="#resources" onClick={() => {
-                navigate("/resources");
-              }}>
-                Resources
-              </a>
-              <a className="nav-link" href="#mission" onClick={() => {
-                navigate("/mission");
-              }}>
-                Mission
-              </a>
-            </div>
           </div>
         </div>
       </nav>
