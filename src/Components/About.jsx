@@ -8,6 +8,7 @@ import emailjs from "@emailjs/browser";
 function About() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
   const navigate = useNavigate();
 
@@ -53,6 +54,7 @@ function About() {
       });
      setName(""); //Reset input after submission
      setEmail(""); //Reset input after submission
+     setSubmitted(true); //after submission turn booleann true to send alert
   };
 
   return (
@@ -86,8 +88,10 @@ function About() {
             </div>
           </div>
         </div>
-
         <form className="form col-8" ref={form} onSubmit={sendEmail}>
+        {  submitted ? <div class="alert alert-success" role="alert">
+              Discord link sent to email address submitted!
+              </div> :
           <div class="form-container">
             <div className="form-group">
               <label className="form-input-label" for="exampleInputName">
@@ -154,8 +158,8 @@ function About() {
                 Join!
               </button>
             </div>
-          </div>
-        </form>
+          </div> }
+  </form>
       </div>
     </div>
   );
