@@ -2,10 +2,13 @@ import React from "react";
 import "./About.css";
 import PhoneTrading from "./images/signal-icon.png";
 import { useNavigate } from "react-router-dom";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function About() {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+
   const navigate = useNavigate();
 
   const form = useRef();
@@ -48,6 +51,8 @@ function About() {
       .then((result) => {
         console.log(result.text, "email sent to admin");
       });
+     setName(""); //Reset input after submission
+     setEmail(""); //Reset input after submission
   };
 
   return (
@@ -92,9 +97,12 @@ function About() {
                 type="name"
                 className="form-control"
                 id="exampleInputName"
+                value = {name}
+                onChange={(e) => setName(e.target.value)} 
                 aria-describedby="nameHelp"
                 placeholder="Enter your name"
                 name="name"
+                required
               />
             </div>
 
@@ -106,9 +114,12 @@ function About() {
                 type="email"
                 className="form-control"
                 id="exampleInputEmail1"
+                value = {email}
+                onChange={(e) => setEmail(e.target.value)} 
                 aria-describedby="emailHelp"
                 placeholder="Enter your email address"
                 name="email"
+                required
               />
               <small id="emailHelp" className="form-text text-muted">
                 *We'll never share your email with anyone else.
@@ -120,6 +131,7 @@ function About() {
                 type="checkbox"
                 className="form-check-input"
                 id="exampleCheck1"
+                required
               />
               <label className="form-check-label" htmlFor="exampleCheck1">
                 I agree to the website{" "}
