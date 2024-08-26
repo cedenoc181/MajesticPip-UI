@@ -56,8 +56,8 @@ function App() {
             <div class="loadingQue">Loading currencies...</div> //add icon for loading ?
           )}
       <About path="/about"/>
-      <Resources path="/reources"/>
-      <Mission path="mission"/>
+      <Resources path="/resources"/>
+      <Mission path="/mission"/>
       </>
       )}
       <Routes>

@@ -38,16 +38,24 @@ function Nav() {
             id="navbarNavAltMarkup"
           >
             <div className="navbar-nav m-auto">
-              <a className="nav-link active" aria-current="page" href="#home">
+              <a className="nav-link active" aria-current="page" href="#home" onClick={() => {
+                navigate("/home");
+              }}>
                 Home
               </a>
-              <a className="nav-link" href="#about">
+              <a className="nav-link" href="#about" onClick={() => {
+                navigate("/about");
+              }}>
                 Sign up!
               </a>
-              <a className="nav-link" href="#resources">
+              <a className="nav-link" href="#resources" onClick={() => {
+                navigate("/resources");
+              }}>
                 Resources
               </a>
-              <a className="nav-link" href="#mission">
+              <a className="nav-link" href="#mission" onClick={() => {
+                navigate("/mission");
+              }}>
                 Mission
               </a>
             </div>
