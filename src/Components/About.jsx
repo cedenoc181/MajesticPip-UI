@@ -88,10 +88,10 @@ function About() {
             </div>
           </div>
         </div>
-        <form className="form col-8" ref={form} onSubmit={sendEmail}>
         {  submitted ? <div class="alert alert-success" role="alert">
               Discord link sent to email address submitted!
               </div> :
+        <form className="form col-8" ref={form} onSubmit={sendEmail}>
           <div class="form-container">
             <div className="form-group">
               <label className="form-input-label" for="exampleInputName">
@@ -158,8 +158,8 @@ function About() {
                 Join!
               </button>
             </div>
-          </div> }
-  </form>
+          </div> 
+  </form> }
       </div>
     </div>
   );
