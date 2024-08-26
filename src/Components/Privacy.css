@@ -39,3 +39,21 @@
     text-decoration: underline;
     margin-right: 8px;
 }
+
+@media only screen and (max-width: 820px) {
+    .privacy-title {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .privacy-title {
+        font-size: 20px;
+        }
+        .sub-head {
+            font-size: 18px;
+        }
+        .policy-text {
+            font-size: 16px;
+        }
+}
