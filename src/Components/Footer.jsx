@@ -1,6 +1,7 @@
 import React from "react";
 import igIcon from "./images/IG-icon.png";
 import discord from "./images/discord-icon.png";
+import telegram from "./images/neon-telegram-icon.png";
 import "./Footer.css";
 
 function Footer() {
